@@ -1,0 +1,93 @@
+{
+  "model_type": "RandomForestClassifier",
+  "accuracy": 1.0,
+  "weighted_f1": 1.0,
+  "cv_f1_mean": 0.9991,
+  "cv_f1_std": 0.0011,
+  "classes": [
+    "high",
+    "low",
+    "moderate"
+  ],
+  "feature_importances": {
+    "deadline_pressure": 0.15811848010960755,
+    "delay_ratio": 0.15629673959788798,
+    "hours_before_deadline": 0.15311579459142627,
+    "start_delay_hours": 0.1473990117499991,
+    "inactivity_gap_hours": 0.10296097202159059,
+    "inactivity_ratio": 0.09930749462327876,
+    "last_minute_flag": 0.07991057987074493,
+    "expanding_last_minute_rate": 0.023530186212157637,
+    "cum_last_minute_count": 0.02299937541939965,
+    "expanding_avg_delay_ratio": 0.017989138318002175,
+    "burst_intensity": 0.016157552588833526,
+    "expanding_avg_deadline_distance": 0.010496101180309421,
+    "deterioration_rate": 0.0033892334704975486,
+    "survey_behavior_score": 0.002909355289291143,
+    "delta_deadline_distance": 0.0026177366986304485,
+    "critical_last_minute": 0.002577615745415805,
+    "task_number": 0.00016114647317410583,
+    "duration_minutes": 5.993214089774652e-05,
+    "task_type_encoded": 3.5538988555657453e-06,
+    "submission_delay_hours": 0.0,
+    "late_submission_flag": 0.0,
+    "cum_late_count": 0.0
+  },
+  "feature_columns": [
+    "task_number",
+    "duration_minutes",
+    "hours_before_deadline",
+    "submission_delay_hours",
+    "last_minute_flag",
+    "late_submission_flag",
+    "inactivity_gap_hours",
+    "survey_behavior_score",
+    "start_delay_hours",
+    "delay_ratio",
+    "deadline_pressure",
+    "critical_last_minute",
+    "inactivity_ratio",
+    "burst_intensity",
+    "delta_deadline_distance",
+    "cum_last_minute_count",
+    "cum_late_count",
+    "expanding_avg_deadline_distance",
+    "expanding_avg_delay_ratio",
+    "expanding_last_minute_rate",
+    "deterioration_rate",
+    "task_type_encoded"
+  ],
+  "classification_report": {
+    "high": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 153.0
+    },
+    "low": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 250.0
+    },
+    "moderate": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 48.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 451.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 451.0
+    }
+  }
+}
